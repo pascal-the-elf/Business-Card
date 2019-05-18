@@ -3,7 +3,7 @@
 <title></title>
 <script src="js/key.js"></script>
 </head>
-<body>
+<body onload="init()">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="940" height="580">
     <style>
         @font-face {
@@ -17,7 +17,6 @@
             font-family: Baloo;
         }
     </style>
-    <rect width="100%" height="100%" fill="#00206A" />
     <text x="62" y="140" fill="#ADFF2F" style="font-size: 72px" onload="url('company')"></text>
     <text x="60" y="260" fill="#ADFF2F" style="font-size: 108px" onload="url('name')"></text>
     <text x="66" y="320" fill="#ADFF2F" style="font-size: 54px" onload="url('work')"></text>
@@ -25,5 +24,10 @@
     <text x="68" y="500" fill="#ADFF2F" style="font-size: 36px" onload="url('website')"></text>
     <!-- maybe some qr code -->
 </svg>
+<script>
+function init() {
+document.body.style.backgroundColor = url("bg");
+}
+</script>
 </body>
 </html>
