@@ -1,7 +1,6 @@
 var DataInURL = {};
 var u = location.href;
 if(u.search("\\?")!=-1) u = u.substr(u.search("\\?"));
-alert(u);
 var _f = 1;
 while(_f || u.search("\\&")!=-1) {
     _f = 0;
