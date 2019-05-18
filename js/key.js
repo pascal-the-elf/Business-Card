@@ -17,7 +17,7 @@ while(_f || u.search("\\&")!=-1) {
     }
     v2 = tmp;
     if(tmp > u.length) break;
-    DataInURL[u.substring(k1, k2)] = u.substring(v1, v2);
+    DataInURL[decodeURIComponent(u.substring(k1, k2))] = decodeURIComponent(u.substring(v1, v2));
     u = u.substr(tmp);
 }
 
