@@ -17,16 +17,20 @@
             font-family: Baloo;
         }
     </style>
-    <text x="62" y="140" fill="#ADFF2F" style="font-size: 72px" onload="url('company')"></text>
-    <text x="60" y="260" fill="#ADFF2F" style="font-size: 108px" onload="url('name')"></text>
-    <text x="66" y="320" fill="#ADFF2F" style="font-size: 54px" onload="url('work')"></text>
-    <text x="68" y="460" fill="#ADFF2F" style="font-size: 36px" onload="url('phone')"></text>
-    <text x="68" y="500" fill="#ADFF2F" style="font-size: 36px" onload="url('website')"></text>
+    <text x="62" y="140" fill="#ADFF2F" style="font-size: 72px" id="company"></text>
+    <text x="60" y="260" fill="#ADFF2F" style="font-size: 108px" id="name"></text>
+    <text x="66" y="320" fill="#ADFF2F" style="font-size: 54px" id="work"></text>
+    <text x="68" y="460" fill="#ADFF2F" style="font-size: 36px" id="phone"></text>
+    <text x="68" y="500" fill="#ADFF2F" style="font-size: 36px" id="website"></text>
     <!-- maybe some qr code -->
 </svg>
 <script>
 function init() {
 document.body.style.backgroundColor = url("bg");
+elm("company").innerHTML = url("company");
+}
+function elm(x) {
+return document.getElementById(x);
 }
 </script>
 </body>
